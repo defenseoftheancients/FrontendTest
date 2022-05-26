@@ -85,7 +85,7 @@ img {
 
 @media screen and (max-width: 1400px) {
   .content-box {
-    padding: 38px 50px;
+    padding: 38px 25px;
   }
 }
 
@@ -112,8 +112,11 @@ img {
   font-size: 24px;
 }
 
-.content-cards .content-card svg {
+.content-cards .content-card img, .content-cards .content-card svg {
   float: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @media screen and (max-width: 1400px) {
