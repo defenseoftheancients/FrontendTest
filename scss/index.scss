@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-family: 'Roboto', sans-serif;
+}
 a {
     text-decoration: none;
 }
@@ -30,6 +33,7 @@ $mobile-width: 768px;
                 display: inline-block;
                 height: inherit;
                 padding: 14px 0px 11px 16px;
+                border-bottom: 1px solid #5C5C5C;
                 &:hover {
                     background-color: #5C5C5C;
                     color: #FFFFFF;
@@ -42,12 +46,14 @@ $mobile-width: 768px;
 .content-right {
     position: relative;
     flex: 1;
+   
 }
 .content-rightmain {
     padding: 0 129px;
     @media screen and (max-width: $tablet-width) {
         padding: 0 25px;
     }
+    margin-bottom: 85px;
 }
 .content-logo {
     width: 310px;
@@ -77,6 +83,7 @@ $mobile-width: 768px;
     .content-card {
         h2 {
             margin-bottom: 18px;
+            font-size: 24px;
         }
         flex-basis: 32%;
         svg {
@@ -89,14 +96,18 @@ $mobile-width: 768px;
         }
         @media screen and (max-width: $mobile-width) {
             flex-basis: 100%;
-            margin-bottom: 20px;
+           
         }
     }
 }
 .content-copyright {
     width: 100%;
     border-top: 1px solid #DEDEDE;
-    position: relative;
+    position: absolute;
     bottom: 0;
     padding: 30px 129px;
+    p {
+        white-space: nowrap;
+        color: #3E3E3E;
+    }
 }

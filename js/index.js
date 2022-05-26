@@ -8,6 +8,6 @@ function groupByLength(arr) {
     return obj;
 }
 
-let a = ['one', 'two', 'three', 'four','five'];
+let a =['three', 'four','five', 'one', 'two', 'z'];
 
 console.log(groupByLength(a));
